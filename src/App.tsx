@@ -14,7 +14,7 @@ export type AnswerObject = {
   correctAnswer: string;
 }
 
-const TOTAL_QUESTIONS = 8;
+const TOTAL_QUESTIONS = 12;
 
 const App = () => {
   const [loading, setLoading] = useState(false);

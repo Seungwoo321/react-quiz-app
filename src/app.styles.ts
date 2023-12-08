@@ -65,4 +65,10 @@ export const Wrapper = styled.div`
   .start {
     max-width: 200px;
   }
+
+  pre {
+    text-align: left;
+    padding: 1rem;
+    background-color: rgba(220, 220, 220, 0.25)
+  }
 `

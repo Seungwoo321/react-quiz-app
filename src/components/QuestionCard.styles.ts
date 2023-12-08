@@ -33,7 +33,8 @@ export const ButtonWrapper = styled.div.withConfig({
     user-select: none;
     font-size: 0.8rem;
     width: 100%;
-    height: 40px;
+    min-height: 40px;
+    height: 100%;
     margin: 5px 0;
     background: ${({ correct, userclicked }) =>
       correct

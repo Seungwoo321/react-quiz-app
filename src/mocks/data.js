@@ -1,4 +1,8 @@
+const openingTag = str => `&lt;${str}&gt;` 
+const closingTag = str => `&lt;${str}/&gt;` 
+
 export const questions = [
+  // CSS Quiz 1
   {
     "category": "css",
     "correct_answer": "선택자(’스타일링 하는 대상’)과 선언(’스타일링 방법’)의 조합이다.",
@@ -19,7 +23,7 @@ export const questions = [
       "page-title { ... }",
       "[page-title] { ... }"
     ],
-    "question": "어떤 선택자로 이 요소를 선택할 수 있을까요? <br> &lt;h1 class=\"page-title\"&gt;Dive into the core features&lt;/h1&gt;",
+    "question": `어떤 선택자로 이 요소를 선택할 수 있을까요? <br> ${openingTag('h1 class="page-title"')}Dive into the core features${closingTag('h1')}`,
     "type": "single"
   },
   {
@@ -41,9 +45,73 @@ export const questions = [
       "명시도가 낮기 때문이다.",
       "일부 HTML 요소에서만 사용할 수 있기 때문이다."
     ],
-    "question": "인라인 스타일 (`&lt;div style=&rdquo;&hellip;&rdquo;&gt;`)을 사용하면 안 되는 이유는?",
+    "question": `인라인 스타일 ('${openingTag('div style=&rdquo;&hellip;&rdquo;')}')을 사용하면 안 되는 이유는?`,
     "type": "single"
   },
+  // CSS Quiz 2
+  {
+    "category": "css",
+    "correct_answer": `<code>${openingTag('div')}</code>요소의 후손인 <code>page-title</code> 클래스 내의 모든 요소(들)에 빨간색 텍스트 색상을 설정한다`,
+    "difficulty": "easy",
+    "incorrect_answers": [
+      `<code>${openingTag('div')}</code>요소의 직속 자식인 <code>page-title</code> 클래스를 갖는 모든 요소(들)에 빨간색 텍스트 색상을 설정한다`,
+      `<code>${openingTag('div')}</code>요소의 직속 자식인 <code>page-title</code> 클래스를 갖는 모든 요소(들)에 빨간색 배경 색상을 설정한다`
+    ],
+    "question": `다음 구문의 역할은 무엇일까요?<br>
+      <pre>
+div .page-title {
+  color: red;
+}
+      </pre>
+    `,
+    "type": "single"
+  },
+  {
+    "category": "css",
+    "correct_answer": `<code>${openingTag('a href="..." class="active"')}</code> 요소 전체에 흰색 텍스트 색상을 설정한다.`,
+    "difficulty": "easy",
+    "incorrect_answers": [
+      `다음과 같은 요소에 흰색 텍스트 색상을 설정한다.<br><code>${openingTag('a href="..."')}${openingTag('span class="active"')}Click me!${closingTag('span')}${closingTag('a')}</code> 요소 전체에 흰색 텍스트 색상을 설정한다.`,
+      `다음과 같은 요소에 흰색 텍스트 색상을 설정한다.<br><code>${openingTag('div class="active"')}${openingTag('a href="..."')}Click me!${closingTag('a')}${closingTag('div')}</code> 요소 전체에 흰색 텍스트 색상을 설정한다.`,
+    ],
+    "question": `다음 구문의 역할은 무엇일까요?<br>
+      <pre>
+a.active {
+  color: white;
+}
+      </pre>
+    `,
+    "type": "single"
+  },
+  {
+    "category": "css",
+    "correct_answer": `다음과 같은 경우에만 요소에 흰색 텍스트 색상을 설정한다.<br><code>${openingTag('a href="..." class="active"')}Click me!${closingTag('a')}</code> <br> 또한 <br> <code>${openingTag('a href="..."')}Click me!${closingTag('a')}</code> 사용자가 마우스 커서를 올릴 경우.`,
+    "difficulty": "easy",
+    "incorrect_answers": [
+      `다음과 같은 경우에만 요소에 흰색 텍스트 색상을 설정한다.<br><code>${openingTag('a href="..." class="active"')}Click me!${closingTag('a')}</code> <br> 사용자가 현재 마우스 커서를 올리고 있는 경우.`,
+    ],
+    "question": `다음 구문의 역할은 무엇일까요?<br>
+      <pre>
+      .active,
+      a:hover {
+        color: white;
+      }
+      </pre>
+    `,
+    "type": "single"
+  },
+  {
+    "category": "css",
+    "correct_answer": "'명시도'로 인해 기존 설정이 덮어 쓰여 CSS 코드 작업이 어려워지기 때문이다.",
+    "difficulty": "easy",
+    "incorrect_answers": [
+      "규칙에 의해 선택된 요소를 변경시킨다.",
+      "사실 사용해도 아무 문제 없다."
+    ],
+    "question": "<code>!important</code>를 사용하는 것이 대체로 좋은 생각이 아닌 이유는?",
+    "type": "single"
+  },
+  // CSS Quiz 3
   {
     "category": "css",
     "correct_answer": "‘absolute(절대적)’값 및 ‘fixed(고정된)’ 값",
@@ -91,3 +159,16 @@ export const questions = [
     "type": "single"
   }
 ]
+
+/**
+  {
+    "category": "css",
+    "correct_answer": "",
+    "difficulty": "",
+    "incorrect_answers": [
+
+    ],
+    "question": "",
+    "type": "single"
+  },
+ */
