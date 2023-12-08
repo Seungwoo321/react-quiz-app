@@ -1,6 +1,11 @@
 # React Quiz App
 
-퀴즈 앱
+- Udemy 강의 학습 중 퀴즈를 복습하기 위해 진행
+- React + TS 프로젝트
+- 백엔드 API는 mock으로 대체
+- vercel 배포
+
+demo: <https://react-quiz-app-gules.vercel.app/>
 
 ## Available Scripts
 
