@@ -19,7 +19,7 @@ export const questions = [
       "page-title { ... }",
       "[page-title] { ... }"
     ],
-    "question": "어떤 선택자로 이 요소를 선택할 수 있을까요? &lt;h1 class='page-title'&gt;Dive into the core features&lt;/h1&gt;",
+    "question": "어떤 선택자로 이 요소를 선택할 수 있을까요? <br> &lt;h1 class=\"page-title\"&gt;Dive into the core features&lt;/h1&gt;",
     "type": "single"
   },
   {

@@ -16,10 +16,12 @@ export const Wrapper = styled.div`
 
 type ButtonWrapperProps = {
   correct: boolean;
-  userClicked: boolean;
+  userclicked: boolean;
 }
 
-export const ButtonWrapper = styled.div<ButtonWrapperProps>`
+export const ButtonWrapper = styled.div.withConfig({
+  shouldForwardProp: (prop) => !['correct', 'userclicked'].includes(prop),
+})<ButtonWrapperProps>`
   transition: all 0.3s ease;
   
   :hover {
@@ -33,10 +35,10 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
     width: 100%;
     height: 40px;
     margin: 5px 0;
-    background: ${({ correct, userClicked }) =>
+    background: ${({ correct, userclicked }) =>
       correct
       ? 'linear-gradient(90deg, #56ffa4, #59bc86)'
-      : !correct && userClicked
+      : !correct && userclicked
         ? 'linear-gradient(90deg, #ff5656, #c16868)'
         : 'linear-gradient(90deg, #56ccff, #6eafb4)'
     };
