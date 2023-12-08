@@ -23,7 +23,7 @@ export enum Type {
 }
 
 export const fetchQuizQuestions = async (amount: number, difficulty: Difficulty, type: string) => {
-  const endpoint = `http://localhost:3000/api/v1/questions?amount=${amount}&difficulty=${difficulty}&type=${type}`
+  const endpoint = `/api/v1/questions?amount=${amount}&difficulty=${difficulty}&type=${type}`
   const data = await (await fetch(endpoint)).json()
   return data.results.map((question: Question) => (
     {
