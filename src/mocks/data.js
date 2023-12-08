@@ -71,6 +71,7 @@ export const questions = [
   {
     "category": "css",
     "correct_answer": "자식 요소가 ‘absolute’라는 ‘position’값을 가질 경우 배치 컨텍스트",
+    "difficulty": "easy",
     "incorrect_answers": [
       "문서 대열 내 배치",
       "자식 요소에 ‘position: fixed’ 선언이 적용된 경우 배치 컨텍스트"
@@ -81,6 +82,7 @@ export const questions = [
   {
     "category": "css",
     "correct_answer": "아니다. ‘position’ 프로퍼티에 기본값(’static’)이 아닌 다른 값을 먼저 추가할 필요가 있다.",
+    "difficulty": "easy",
     "incorrect_answers": [
       "사실이다.",
       "아니다. 우선 요소에 ‘position’ 프로퍼티를 추가한 다음에 이런 프로퍼티를 사용해 배치를 변경할 수 있다."
