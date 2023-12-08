@@ -23,7 +23,7 @@ export const questions = [
       "page-title { ... }",
       "[page-title] { ... }"
     ],
-    "question": `어떤 선택자로 이 요소를 선택할 수 있을까요? <br> ${openingTag('h1 class="page-title"')}Dive into the core features${closingTag('h1')}`,
+    "question": `어떤 선택자로 이 요소를 선택할 수 있을까요? <br> <pre>${openingTag('h1 class="page-title"')}Dive into the core features${closingTag('h1')}</pre>`,
     "type": "single"
   },
   {
