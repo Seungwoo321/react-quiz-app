@@ -1,6 +1,6 @@
 # React Quiz App
 
-퀴즈 앱 만들기
+퀴즈 앱
 
 ## Available Scripts
 

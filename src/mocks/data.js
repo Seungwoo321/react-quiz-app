@@ -19,12 +19,12 @@ export const questions = [
       "page-title { ... }",
       "[page-title] { ... }"
     ],
-    "question": "어떤 선택자로 이 요소를 선택할 수 있을까요? <h1 class='page-title'>Dive into the core features</h1>",
+    "question": "어떤 선택자로 이 요소를 선택할 수 있을까요? &lt;h1 class='page-title'&gt;Dive into the core features&lt;/h1&gt;",
     "type": "single"
   },
   {
     "category": "css",
-    "correct_answer": "명시도는 여러 CSS 규칙이 동일한 요소를 대상으로 할 때 발생하는 충돌하는 것이 핵심입니다.",
+    "correct_answer": "명시도는 여러 CSS 규칙이 동일한 요소를 대상으로 할 때 발생하는 충돌을 해결하는 것이 핵심입니다.",
     "difficulty": "easy",
     "incorrect_answers": [
       "명시도는 CSS 모범 사례로서 가장 명시적인 선택자로 요소를 선택하도록 지시한다.",
@@ -41,7 +41,7 @@ export const questions = [
       "명시도가 낮기 때문이다.",
       "일부 HTML 요소에서만 사용할 수 있기 때문이다."
     ],
-    "question": "인라인 스타일 (`<div style=”…”>`)을 사용하면 안 되는 이유는?",
+    "question": "인라인 스타일 (`&lt;div style=&rdquo;&hellip;&rdquo;&gt;`)을 사용하면 안 되는 이유는?",
     "type": "single"
   },
   {
